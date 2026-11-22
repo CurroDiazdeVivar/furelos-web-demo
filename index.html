@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construcciones Furelos Louzao — Propuesta de diseño (demo no oficial)</title>
+  <meta name="description" content="Propuesta de diseño (demo no oficial) para Construcciones Furelos Louzao, S.L. Obra pública, edificación y rehabilitación en Las Merindades.">
+  <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cinta superior -->
+  <div class="topbar">
+    <p class="topbar__text">Propuesta de diseño · demo no oficial</p>
+    <a class="topbar__link" href="https://construccionesfurelos.com" target="_blank" rel="noopener">construccionesfurelos.com</a>
+  </div>
+
+  <!-- Cabecera -->
+  <header class="site-header">
+    <a class="brand" href="#empresa" aria-label="Construcciones Furelos Louzao, inicio">
+        <img class="brand__logo" src="assets/logo.png" alt="Construcciones Furelos Louzao" width="1920" height="886">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="#empresa">Empresa</a></li>
+        <li><a class="site-nav__link" href="#actividad">Actividad</a></li>
+        <li><a class="site-nav__link" href="#obras">Obras</a></li>
+        <li><a class="site-nav__link" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a class="header-phone" href="tel:+34947147242">947 147 242</a>
+  </header>
+
+  <main id="contenido">
+
+    <!-- Hero -->
+    <section class="hero" id="empresa" aria-labelledby="hero-title">
+      <picture>
+        <source type="image/webp" srcset="assets/img/hero1-800.webp 800w, assets/img/hero1.webp 1200w" sizes="100vw">
+        <img class="hero__bg" src="assets/img/hero1.jpg" alt="Plaza Mayor de Medina de Pomar pavimentada" fetchpriority="high" width="1600" height="1008">
+      </picture>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <h1 class="hero__title" id="hero-title">Construimos en Las Merindades desde 1988</h1>
+        <p class="hero__subtitle">Obra pública, edificación y rehabilitación. Proyecto, ejecución y entrega con un solo interlocutor.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#obras">Ver obras</a>
+          <a class="btn btn--ghost" href="tel:+34947147242">Llamar 947 147 242</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Franja de datos -->
+    <div class="stats" aria-label="Datos destacados">
+      <div class="container stats__grid">
+        <p class="stat"><span class="stat__accent">+30</span> años</p>
+        <p class="stat"><span class="stat__accent">70 %</span> de licitaciones ganadas</p>
+        <p class="stat"><span class="stat__accent">Medina de Pomar</span>
+          <span class="stat__note">Burgos · Las Merindades</span></p>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <section class="services section" id="actividad" aria-labelledby="services-title">
+      <div class="container">
+        <h2 class="section__title" id="services-title">Servicios</h2>
+        <ol class="services__list">
+          <li class="service reveal">
+            <span class="service__num" aria-hidden="true">01</span>
+            <h3 class="service__name">Obra civil pública y privada</h3>
+            <p class="service__desc">Urbanización, pavimentación y obra pública. Proyecto y ejecución con un solo interlocutor.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num" aria-hidden="true">02</span>
+            <h3 class="service__name">Edificación y promoción</h3>
+            <p class="service__desc">Construcción de viviendas, naves y edificios de uso residencial e industrial, llave en mano.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num" aria-hidden="true">03</span>
+            <h3 class="service__name">Rehabilitación y reformas</h3>
+            <p class="service__desc">Rehabilitación integral de edificios y reformas de viviendas, locales y comunidades de vecinos.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num" aria-hidden="true">04</span>
+            <h3 class="service__name">Accesibilidad y eficiencia energética</h3>
+            <p class="service__desc">Accesibilidad, aislamiento térmico y envolventes eficientes para reducir el consumo energético del edificio.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num" aria-hidden="true">05</span>
+            <h3 class="service__name">Retail e interiorismo comercial</h3>
+            <p class="service__desc">Reformas de locales comerciales y espacios de retail, con proyecto y ejecución integrados.</p>
+          </li>
+          <li class="service reveal">
+            <span class="service__num" aria-hidden="true">06</span>
+            <h3 class="service__name">Arquitectura</h3>
+            <p class="service__desc">Departamento de arquitectura propio: proyecto, dirección de obra y legalización.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Obras -->
+    <section class="works section" id="obras" aria-labelledby="works-title">
+      <div class="works__band">
+        <picture>
+          <source type="image/webp" srcset="assets/img/hero2-800.webp 800w, assets/img/hero2.webp 1200w" sizes="100vw">
+          <img class="works__band-img" src="assets/img/hero2.jpg" alt="Retroexcavadora cargando escombros en una obra urbana" width="1600" height="1008">
+        </picture>
+        <div class="works__band-veil" aria-hidden="true"></div>
+        <div class="container works__band-inner">
+          <p class="works__band-kicker">Licitación pública</p>
+          <p class="works__band-title">Ganamos siete de cada diez licitaciones a las que nos presentamos</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="section__title" id="works-title">Obras</h2>
+        <ul class="works__grid">
+          <li class="work reveal">
+            <figure class="work__card">
+              <div class="work__media">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/IMG_9088-800.webp 800w, assets/img/IMG_9088.webp 1200w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw">
+                  <img src="assets/img/IMG_9088.jpg" alt="Cubierta C- Agreda, Medina de Pomar" loading="lazy" width="1200" height="1600">
+                </picture>
+              </div>
+              <figcaption class="work__meta">
+                <h3 class="work__name">Cubierta C- Agreda</h3>
+                <p class="work__place">Medina de Pomar</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="work reveal">
+            <figure class="work__card">
+              <div class="work__media">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/IMG_7300-1-800.webp 800w, assets/img/IMG_7300-1.webp 1200w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw">
+                  <img src="assets/img/IMG_7300-1.jpg" alt="Piscinas Puente Villanueva, Medina de Pomar" loading="lazy" width="1600" height="1200">
+                </picture>
+              </div>
+              <figcaption class="work__meta">
+                <h3 class="work__name">Piscinas Puente Villanueva</h3>
+                <p class="work__place">Medina de Pomar</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="work reveal">
+            <figure class="work__card">
+              <div class="work__media">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/IMG_7615-800.webp 800w, assets/img/IMG_7615.webp 1200w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw">
+                  <img src="assets/img/IMG_7615.jpg" alt="Nave en polígono, Medina de Pomar" loading="lazy" width="1600" height="1200">
+                </picture>
+              </div>
+              <figcaption class="work__meta">
+                <h3 class="work__name">Nave en polígono</h3>
+                <p class="work__place">Medina de Pomar</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="work reveal">
+            <figure class="work__card">
+              <div class="work__media">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/IMG_4406-800.webp 800w, assets/img/IMG_4406.webp 1200w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw">
+                  <img src="assets/img/IMG_4406.jpg" alt="Estructura Larrabizker, Munguía" loading="lazy" width="1200" height="1600">
+                </picture>
+              </div>
+              <figcaption class="work__meta">
+                <h3 class="work__name">Estructura Larrabizker</h3>
+                <p class="work__place">Munguía</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="work reveal">
+            <figure class="work__card">
+              <div class="work__media">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/IMG_3360-800.webp 800w, assets/img/IMG_3360.webp 1200w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw">
+                  <img src="assets/img/IMG_3360.jpg" alt="Estructura Sopeñano, Valle de Mena" loading="lazy" width="1200" height="1600">
+                </picture>
+              </div>
+              <figcaption class="work__meta">
+                <h3 class="work__name">Estructura Sopeñano</h3>
+                <p class="work__place">Valle de Mena</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="work reveal">
+            <figure class="work__card">
+              <div class="work__media">
+                <picture>
+                  <source type="image/webp" srcset="assets/img/IMG_3108-800.webp 800w, assets/img/IMG_3108.webp 1200w" sizes="(min-width:1024px) 30vw, (min-width:640px) 45vw, 92vw">
+                  <img src="assets/img/IMG_3108.jpg" alt="Estructura Los Llamares, Villasana de Mena" loading="lazy" width="1200" height="1600">
+                </picture>
+              </div>
+              <figcaption class="work__meta">
+                <h3 class="work__name">Estructura Los Llamares</h3>
+                <p class="work__place">Villasana de Mena</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Banda de confianza -->
+    <section class="trust section" id="confianza" aria-labelledby="trust-title">
+      <div class="container">
+        <h2 class="section__title" id="trust-title">Confianza</h2>
+        <ul class="trust__list">
+          <li class="trust__item reveal">Inscrita en el Registro Oficial de Licitadores del Estado</li>
+          <li class="trust__item reveal">Departamento de arquitectura propio</li>
+          <li class="trust__item reveal">Ámbito: Merindades, Burgos, País Vasco, Cantabria y La Rioja</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cierre / contacto -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <img class="contact__logo" src="assets/logo_inv2.png" alt="Construcciones Furelos Louzao" width="1920" height="886">
+        <div class="contact__body">
+          <h2 class="contact__title" id="contact-title">Contacto</h2>
+          <address class="contact__address">Avda. Bilbao, 11 Bajo · 09500 Medina de Pomar (Burgos)</address>
+          <p class="contact__row">
+            <a class="contact__phone" href="tel:+34947147242">947 147 242</a>
+          </p>
+          <p class="contact__row">
+            <a class="contact__mail" href="mailto:furelos@construccionesfurelos.com">furelos@construccionesfurelos.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__note">Propuesta de diseño — demo no oficial.</p>
+      <p class="footer__year">© 2026 Construcciones Furelos Louzao, S.L.</p>
+      <p class="footer__credit">Propuesta de diseño — no es la web oficial</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
