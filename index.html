@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.remove("no-js");</script>
 </head>
 <body>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
 
   <!-- Cinta superior -->
   <div class="topbar">
@@ -63,7 +66,7 @@
     </section>
 
     <!-- Franja de datos -->
-    <div class="stats" aria-label="Datos destacados">
+    <div class="stats" role="group" aria-label="Datos destacados">
       <div class="container stats__grid">
         <p class="stat"><span class="stat__accent">+30</span> años</p>
         <p class="stat"><span class="stat__accent">70 %</span> de licitaciones ganadas</p>
@@ -76,7 +79,7 @@
     <section class="services section" id="actividad" aria-labelledby="services-title">
       <div class="container">
         <h2 class="section__title" id="services-title">Servicios</h2>
-        <ol class="services__list">
+        <ol class="services__list" role="list">
           <li class="service reveal">
             <span class="service__num" aria-hidden="true">01</span>
             <h3 class="service__name">Obra civil pública y privada</h3>
@@ -121,13 +124,13 @@
         <div class="works__band-veil" aria-hidden="true"></div>
         <div class="container works__band-inner">
           <p class="works__band-kicker">Licitación pública</p>
-          <p class="works__band-title">Ganamos siete de cada diez licitaciones a las que nos presentamos</p>
+          <h2 class="works__band-title">Ganamos siete de cada diez licitaciones a las que nos presentamos</h2>
         </div>
       </div>
 
       <div class="container">
         <h2 class="section__title" id="works-title">Obras</h2>
-        <ul class="works__grid">
+        <ul class="works__grid" role="list">
           <li class="work reveal">
             <figure class="work__card">
               <div class="work__media">
@@ -220,7 +223,7 @@
     <section class="trust section" id="confianza" aria-labelledby="trust-title">
       <div class="container">
         <h2 class="section__title" id="trust-title">Confianza</h2>
-        <ul class="trust__list">
+        <ul class="trust__list" role="list">
           <li class="trust__item reveal">Inscrita en el Registro Oficial de Licitadores del Estado</li>
           <li class="trust__item reveal">Departamento de arquitectura propio</li>
           <li class="trust__item reveal">Ámbito: Merindades, Burgos, País Vasco, Cantabria y La Rioja</li>

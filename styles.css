@@ -748,3 +748,31 @@ button:focus-visible {
   font-size: 0.8rem;
   color: var(--sand);
 }
+
+/* Enlace de salto (visible solo al recibir foco) */
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--ink);
+  color: var(--offwhite);
+  font-weight: 600;
+}
+
+.skip:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+/* Sin JavaScript: la navegación se muestra siempre y no hay botón huérfano */
+.no-js .nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .no-js .site-nav {
+    display: block;
+  }
+}
